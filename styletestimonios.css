@@ -1,0 +1,222 @@
+.anitatestimonios {
+    width: 337px;
+    height: 357px;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 18rem;
+}
+
+.textoalado {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+#jeje {
+    width: 455px;
+    height: 152px;
+    margin-left: 2rem;
+}
+
+#cuadrolila2 {
+    background-color: #CCB0E5;
+    width: 432px;
+    height: 38px;
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.clickaqui {
+    font-family: 'quicksand';
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.25rem;
+}
+
+#palabrasarriba {
+    font-family: 'quicksand';
+    font-size: 30px;
+    font-weight: 700;
+    color: #EF55A1;
+    margin-bottom: 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tarjeta-wrap {
+  margin: 1rem;
+  -webkit-perspective: 800;
+  perspective: 800;
+}
+
+.tarjeta {
+    width: 272.24px;
+    height: 338.97px;
+    background: #EF55A1;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.adelante, .atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    transform: rotateY(180deg);
+
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #ffffff;
+    font-family: 'quicksand';
+}
+
+.tarjeta-wrap:hover  .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.estilo1 {
+    background: #CCB0E5;
+    padding: 2rem;
+}
+
+.estilo2 {
+    background: #C8C389;
+    padding: 2rem;
+}
+
+#nombretestimonio {
+    font-family: 'quicksand';
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#nosdice {
+    font-family: 'quicksand';
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#fototestimonio {
+    width: 70%;
+    margin-left: 2rem;
+}
+
+#estrellas {
+    width: 70%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+#estrellas2 {
+    width: 70%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* ======= BREAKPOINT TABLET (ancho mínimo = 1024px) ========== */
+@media screen and (min-width: 1024px) {
+}
+
+/* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
+@media screen and (max-width: 480px) {
+    
+    /*PREGUNTA*/
+    .anitatestimonios {
+        display: none;
+    }
+    .textoalado{
+        margin: 1rem;
+        width: 100%;
+    }
+    #jeje {
+        padding: 0;
+        margin: 1rem;
+        width: 100%;
+        height: auto;
+    }
+    #cuadrolila2 {
+        width: 90%;
+        /* vertical - horizontal */
+        margin: .875rem auto !important;
+        /* arriba - derecha - abajo - izquierda */
+        margin: 0 auto .875rem auto !important;
+        display: block;
+    }
+    .clickaqui {
+        text-decoration: none;
+    }
+
+    /*TESTIMONIOS*/
+    .tarjeta-wrap {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .textoalado {
+        margin: 0 !important;
+        padding: 1rem !important;
+        float: none !important;
+    }
+    .textoalado img {
+        margin: 0 !important;
+    }
+    .wrap {
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .wrap .tarjeta-wrap {
+        width: auto !important;
+    }
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tarjeta-wrap {
+    background: #EF55A1;
+    margin: 1rem;
+    margin-top: 2rem;
+
+}
+
+.tarjeta {
+    width: 272.24px;
+    height: 338.97px;
+    background: #EF55A1;
+    position: relative;
+}
+
+.atras {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #ffffff;
+    font-family: 'quicksand';
+}
+
+#foto {
+    width: 15rem;
+}

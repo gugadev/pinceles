@@ -1,0 +1,131 @@
+.titulo {
+    width: 100%;
+    height: 11rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+#primero {
+    font-family: 'muthiara -demo version-';
+    color: #EF55A1;
+    font-size: 10rem;
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 8rem;
+    padding-bottom: 0rem;
+    float: left;
+}
+#segundo {
+    font-family: 'quicksand';
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #EF55A1;
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    float: left;
+}
+
+.contenido {
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-top: 4.6rem;
+}
+
+#cuadrosubtitulo {
+    background-color: #CCB0E5;
+    width: 100%;
+    height: 4rem;
+    align-items: left;
+    text-align: left;
+    margin: 0;
+}
+
+.nombre {
+    font-family: 'quicksand';
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5.5rem;
+    padding-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+#textocontenido {
+    font-family: 'quicksand';
+    font-size: 1rem;
+    color: #EF55A1;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
+@media screen and (max-width: 480px) {
+ 
+ .titulo {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0;
+    display: flex;
+    justify-content: space-around;
+ }
+ #primero {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+ }
+ #segundo {
+    font-size: 1rem;
+    line-height: 1rem;
+    align-items: center;
+    padding: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 0;
+ }
+
+
+ .contenido {
+    padding: 0;
+ }
+ #cuadrosubtitulo {
+    width: 100%;
+    height: auto;
+ }
+ .nombre {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+ }
+ p {
+    margin-bottom: 0;
+ }
+ #textocontenido {
+    padding: 0;
+    font-size: .5rem;
+ }
+}
+
+@media screen and (max-width: 480px) {
+   .titulo {
+      justify-content: center !important;
+   }
+   #cuadrosubtitulo {
+      padding-left: 1rem;
+   }
+   #textocontenido {
+      padding: 0 1rem !important;
+      text-align: justify;
+      font-size: .875rem;
+   }
+}

@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+
+
+.primero{
+    margin: 5rem;
+}
+
+.cuadros1 {
+    background-color: #CCB0E5;
+    width: 377px;
+    height: 545px;
+    float: left;
+    margin-left: 55px;
+}
+
+.cuadros2 {
+    background-color: #CCB0E5;
+    width: 377px;
+    height: 545px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#fotopost {
+    width: 338px;
+    height: 288px;
+    margin: 20px;
+}
+
+#titulopost {
+    font-family: 'quicksand';
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+#cuadroblanco {
+    width: 254px;
+    height: 59px;
+    background-color: white;
+    margin-left: 60px;
+    border: none;
+}
+
+#leermas {
+    font-family: 'quicksand';
+    color: #CCB0E5;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
+@media screen and (max-width: 480px) {
+ .cuadros1 {
+    margin: 0;
+    padding: 0;
+ }
+ .cuadros2 {
+    margin: 0;
+    padding: 0;
+ }
+ .primero {
+    margin: 0;
+    padding: 0;
+ }
+ .cuadros1,
+ .cuadros2 {
+    margin: 1rem auto;
+    float: none;
+    width: 90%;
+    padding-top: 1rem;
+ }
+ .cuadros1 img,
+ .cuadros2 img {
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block;
+ }
+ .cuadros1 #cuadroblanco,
+ .cuadros2 #cuadroblanco {
+    margin: 0 auto !important;
+    display: block;
+ }
+}
