@@ -28,16 +28,19 @@
     
     <div class="navbar">
         <section class="navbar-container">
-          <a><img src="Logos/LOGO.png" width="70" height="70"></a>
-          <input type="search" class="buscar">
-          <div class="burguer" tabindex="-1">
-            <span class="material-symbols-outlined" style="color: #ffffff">
-              menu
+            <a><img src="Logos/LOGO.png" width="70" height="70"></a>
+            <input type="search" placeholder="Buscar..." class="buscar">
+            <button id="btn-burguer" class="burguer" tabindex="-1">
+              <span class="material-symbols-outlined" style="color: #ffffff">
+                menu
               </span>
-          </div>
+            </button>
         </section>
         
-        <div class="navbar-right">
+        <div id="drawer" class="navbar-right">
+            <div class="drawer-close">
+              <button id="btn-close-drawer">&times;</button>
+            </div>
             <a href="home.html">HOME</a>
             <a href="productos.html">PRODUCTOS</a>
             <a href="blog.html">BLOG</a>
@@ -149,6 +152,21 @@
             correo=document.getElementById('correo').value;
             alert('Gracias '+ nombre+ ' ' + 'preparate para las promos')
         }
+        // cuando el documento está cargado
+       document.addEventListener('DOMContentLoaded', () => {
+        // boton hamburguesa
+        const btnBurguer = document.getElementById('btn-burguer')
+        btnBurguer.addEventListener('click', () => {
+          const drawer = document.getElementById('drawer')
+          drawer.classList.add('visible')
+        })
+        const btnCloseDrawer = document.getElementById('btn-close-drawer')
+        btnCloseDrawer.addEventListener('click', () => {
+          const drawer = document.getElementById('drawer')
+          drawer.classList.remove('visible')
+        })
+      })
       </script>
 </body>
+
 </html>

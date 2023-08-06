@@ -51,6 +51,7 @@
     padding: 30px;
 }
 
+/* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
 @media screen and (max-width: 480px) {
     .prueba {
         margin: 1.25rem 0 0 0 !important;

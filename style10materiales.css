@@ -126,6 +126,20 @@
    #textocontenido {
       padding: 0 1rem !important;
       text-align: justify;
-      font-size: .875rem;
+      font-size: .8rem;
+   }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1380px) {
+   .titulo {
+      display: flex;
+      margin: 3rem auto 1rem auto;
+      padding: 0 0 0 3rem;
+   }
+   .titulo #segundo {
+      font-size: 2.725rem;
+   }
+   #textocontenido {
+      text-align: justify;
    }
 }

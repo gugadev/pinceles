@@ -60,34 +60,53 @@ a {
 
 /* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
 @media screen and (max-width: 480px) {
- .cuadros1 {
-    margin: 0;
-    padding: 0;
- }
- .cuadros2 {
-    margin: 0;
-    padding: 0;
- }
- .primero {
-    margin: 0;
-    padding: 0;
- }
- .cuadros1,
- .cuadros2 {
-    margin: 1rem auto;
-    float: none;
-    width: 90%;
-    padding-top: 1rem;
- }
- .cuadros1 img,
- .cuadros2 img {
-    width: 90% !important;
-    margin: 0 auto !important;
-    display: block;
- }
- .cuadros1 #cuadroblanco,
- .cuadros2 #cuadroblanco {
-    margin: 0 auto !important;
-    display: block;
- }
+    .cuadros1 {
+       margin: 0;
+       padding: 0;
+    }
+    .cuadros2 {
+       margin: 0;
+       padding: 0;
+    }
+    .primero {
+       margin: 0;
+       padding: 0;
+    }
+    .cuadros1,
+    .cuadros2 {
+       margin: 1rem auto;
+       float: none;
+       width: 90%;
+       padding-top: 1rem;
+    }
+    .cuadros1 img,
+    .cuadros2 img {
+       width: 90% !important;
+       margin: 0 auto !important;
+       display: block;
+    }
+    .cuadros1 #cuadroblanco,
+    .cuadros2 #cuadroblanco {
+       margin: 0 auto !important;
+       display: block;
+    }
+   }
+
+@media screen and (min-width: 1024px) and (max-width: 1380px) {
+    .primero {
+        display: grid; /* grilla - tabla */
+        grid-template-columns: repeat(3, 1fr); /* columnas - celdas */
+        grid-gap: 1rem;
+        margin: 2rem;
+    }
+    .cuadros1,
+    .cuadros2 {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    .cuadros1 img,
+    .cuadros2 img {
+        width: calc(100% - 40px) !important;
+    }
 }

@@ -103,14 +103,99 @@ input[type=search]{
     color: black;
 }
 
+@media screen and (min-width: 1380px) {
+    .navbar {
+        padding: .875rem 2rem;
+        position: relative;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar .navbar-container a {
+        margin: 0 !important;
+    }
+    .navbar-right a:first-of-type {
+        margin-left: 0 !important;
+    }
+    .navbar::after {
+        content: "";
+        width: 20px;
+    }
+    .buscar {
+        position: absolute;
+        right: 2rem;
+    }
+}
+
 /* ======= BREAKPOINT TABLET (ancho mínimo = 1024px) ========== */
 @media screen and (min-width: 1024px) {
-    .navbar-container > .buscar {
+    .navbar-container .buscar {
         display: none;
     }
-    .navbar-container > .burguer {
+    .navbar-container .burguer {
         display: none;
     }
+    .drawer-close {
+        display: none;
+    }
+    .bestseller {
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto !important;
+        justify-content: center;
+    }
+    .bestseller .cuadrobestseller {
+        flex: 0 0 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        float: none;
+        clear: both;
+        width: 100vw;
+        margin: 0;
+    }
+    .bestseller .palabrabestseller {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        padding-top: 2.5rem;
+    }
+    .bestseller .palabrabestseller img {
+        margin: 0 .5rem;
+    }
+    .bestseller .palabrabestseller br {
+        display: none;
+    }
+    .bestseller .cuadrobestseller hr {
+        margin: 0 !important;
+        display: none;
+    }
+    .mafalda {
+        display: none;
+    }
+    .cuadrobestseller2-container {
+        display: flex;
+        justify-content: center;
+    }
+    .vermas {
+        width: 80% !important;
+        margin: 0 auto 2rem auto !important;
+        display: block;
+    }
+    #medidasmano {
+        display: none;
+    }
+    .footer {
+        margin: 0 !important;
+     }
+     .footer > div {
+        display: flex;
+        justify-content: center;
+     }
 }
 
 /* ======= BREAKPOINT CELULAR (ancho max = 480px) ========== */
@@ -326,7 +411,7 @@ input[type=search]{
     .derechos {
         height: 2rem !important;
         width: 100% !important;
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
         margin: 0% !important;
         padding: 0% !important;
     }
